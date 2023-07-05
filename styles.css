@@ -1,0 +1,250 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+:root
+{
+    --burlywood : burlywood;
+}
+*
+{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+}
+header
+{
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 14%;
+    background: var(--burlywood);
+}
+.logo
+{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 500;
+    gap: 1rem;
+}
+.material-symbols-outlined
+{
+    font-size: 2 rem;
+}
+.logo span
+{
+    color: rgb(116, 91, 59);
+    font-weight: 700;
+}
+.logo:hover
+{
+    transform: scale(1.2);
+    transition: all .75s ease;
+}
+.links ul
+{
+    display: flex;
+}
+.links a
+{
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 30px;
+}
+.links a:hover, .links a.active
+{
+    color: rgb(116, 91, 59);
+    transform: scale(1.4);
+}
+.menu
+{
+    font-size: 2rem;
+    z-index: 100000;
+    display: none;
+    cursor: pointer;
+}
+.text span
+{
+    color: var(--burlywood);
+}
+
+section
+{
+    padding: 70px 14% 60px;
+}
+.btn
+{
+    border: 2px solid var(--burlywood);
+    /* padding: 0.8rem 1.3rem; */
+    padding: 15px 35px;
+    border-radius: 24px;
+    background-color: var(--burlywood);
+    color: rgb(68, 59, 46);
+    display: inline-block;
+    font-weight: 600;
+    transition: all .75s ease;
+    font-size: 16px;
+}
+.btn:hover
+{
+    background-color: transparent;
+    border: 2px solid var(rgb(68, 59, 46));
+    color: var(--burlywood);
+}
+.home
+{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr );
+    align-items: center;
+    gap: 2rem;
+    background-image: url(Images/organic-food-background-hand-drawn-concept-free-vector.jpg);
+}
+.home .image img
+{
+    width: 100%;
+    height: auto;
+}
+.home .text
+{
+    padding: 2.5rem;
+    background: white;
+    width: 23rem;
+}
+.home .text h1
+{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 2.5rem;
+}
+.best-sellers .text
+{
+    text-align: center;
+    font-weight: 700;
+}
+.best-sellers .text h2
+{
+    color: var(--burlywood);
+}
+.card-wrapper, .review-wrapper
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 2rem;
+    align-items: center;
+    margin-top: 4rem;
+}
+.card 
+{
+    position: relative;
+    padding: 10px 35px 40px;
+    background: rgb(255, 230, 198); 
+    border-radius: 15px;
+}
+.card img
+{
+    width: 100%;
+    height: auto;
+    transition: all .75s ease;
+}
+.card img:hover
+{
+    transform: scale(1.2);
+
+}
+.card h3
+{
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.card p
+{
+    line-height: 30px;
+    color: rgb(116, 91, 59);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.card-text
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.price
+{
+    font-weight: 800;
+    color: black;
+    font-size: 1.2rem;
+}
+.about
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+.about .image img
+{
+    width: 100%;
+    height: auto;
+}
+.about .text h2
+{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 2.5rem;
+    color: rgb(135, 112, 81);
+}
+.about .text p
+{
+    font-size: 14px;
+    font-weight: 200;
+    color: #212121;
+}
+.reviews .text
+{
+    text-align: center;
+}
+.review-wrapper
+{
+    grid-template-columns: repeat(auto-fit, minmax(215px, auto));
+}
+.review-card .text
+{
+    font-size: 14px;
+}
+.review-card
+{
+    position: relative;
+    padding: 20px;
+    background: rgb(220, 196, 165); 
+    border-radius: 15px;
+}
+.user
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    justify-content: space-between;
+}
+.user img
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
